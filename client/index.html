@@ -1,0 +1,40 @@
+<html ng-app="myApp">
+<head>
+	<title>Kitap Dükkanı</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/bower_components/boostrap/css/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+      <a class="navbar-brand" href="#">Kitap Dükkanı</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <li><a href="#!/kitaplar/ekle">Kitap Ekle</a></li>
+
+        </ul>   
+      </div>
+    </nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div ng-view>
+        
+    </div>
+	</div>
+</div>
+</div>
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-route/angular-route.js"></script>
+	<script src="/bower_components/boostrap/js/bootstrap.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers/kitaplar.js"></script>
+	<script src="controllers/turler.js"></script>
+</body>
+</html>

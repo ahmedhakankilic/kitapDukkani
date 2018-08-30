@@ -1,0 +1,30 @@
+
+<div class="panel panel-default" ng-init="getKitap()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{kitap.baslik}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class= "col-md-4">
+        <img ng-src="{{kitap.kapak_link}}">
+      </div>
+      <div class= "col-md-8">
+        <p>{{kitap.aciklama}}</p>
+        <ul class="list-group"></ul>
+        <li class="list-group-item">Tür: {{kitap.tur}}</li>
+        <li class="list-group-item">Yazar: {{kitap.yazar}}</li>
+        <li class="list-group-item">Yayın Evi: {{kitap.yayin_evi}}</li>
+        <li class="list-group-item">Sayfa Sayısı: {{kitap.sayfa}}</li>
+
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+
+<div class="pull-right">
+<a class="btn btn-primary" href="#!/kitaplar">Geri git</a>
+<a class="btn btn-primary" href="#!" taget="_blank">Satın Al</a>
+<a class="btn btn-primary" href="#!/kitaplar/duzenle/{{kitap._id}}">Düzenle</a>
+<a class="btn btn-primary" href="#" ng-click="removeKitap(kitap._id)">Sil</a>
+</div>

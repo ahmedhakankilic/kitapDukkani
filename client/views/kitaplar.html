@@ -1,0 +1,27 @@
+
+<div class="panel panel-default" ng-init="getKitaplar()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Yeni Kitaplar</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <div ng-repeat="kitap in kitaplar">
+        <div class="col-md-6">
+          <div class="col-md-6">
+
+              <h4>{{kitap.baslik}}</h4>
+              <p>{{kitap.aciklama}}</p>
+              <a class="btn btn-primary" href="#!/kitaplar/detaylar/{{kitap._id}}">Detaylar</a>
+
+            </div>
+
+            <div class="col-md-6">
+             <img class="thumbnail" ng-src="{{kitap.kapak_link}}">
+          </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

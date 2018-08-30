@@ -1,0 +1,56 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Kitap Düzenle</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="updateKitap()" ng-init="getKitap()">
+        <div class="form-group">
+          <label>Başlık</label>
+          <input type="text" class="form-control" ng-model="kitap.baslik" placeholder="Başlık">
+        </div>
+        <div class="form-group">
+          <label>Genre</label>
+          <select ng-model="kitap.genre" class="form-control">
+            <option value="Suspense">Suspense</option>
+            <option value="Drama">Drama</option>
+            <option value="Romance">Romance</option>
+            <option value="NonFiction">NonFiction</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+       <div class="form-group">
+          <label>Yazar</label>
+          <input type="text" class="form-control" ng-model="kitap.yazar" placeholder="Yazar">
+        </div>
+        <div class="form-group">
+          <label>Yayın Evi</label>
+          <input type="text" class="form-control" ng-model="kitap.yayin_evi" placeholder="Yayın Evi">
+        </div>
+        <div class="form-group">
+          <label>Sayfa sayısı</label>
+          <input type="text" class="form-control" ng-model="kitap.sayfa" placeholder="Sayfa sayısı">
+        </div>
+        <div class="form-group">
+          <label>Açıklama</label>
+          <textarea class="form-control" ng-model="kitap.aciklama" placeholder="Açıklama"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Fotoğraf Linki</label>
+          <input type="text" class="form-control" ng-model="kitap.kapak_link" placeholder="Fotoğraf Linki">
+        </div>
+        <div class="form-group">
+          <label>Satın Al</label>
+          <input type="text" class="form-control" ng-model="kitap.satinal_link" placeholder="Link">
+        </div>
+       
+        <button type="submit" class="btn btn-default">Değişiklikleri Kaydet</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+<hr />
+<a class="btn btn-primary"href="#!/kitaplar">Geri git</a>
